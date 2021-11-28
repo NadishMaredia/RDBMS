@@ -1,0 +1,32 @@
+How to login as a user:
+===========================
+-u <userName> -p <password>
+For example:
+-u root -p root123
+-u root -p root123 -d myTestDB
+
+
+How to create a user
+===========================
+create user with (ben, ben123);
+delete user ben;
+
+Database operations
+=======================
+create database mydb;
+drop database mydb;
+use mydb;
+show databases;
+
+Table operations
+=================
+create table player(name string, age integer, height double, isChampion boolean);
+drop table player;
+show tables;
+truncate player;
+
+select * from player;
+select * from player where name='messi';
+delete from player;
+delete from player where name='messi';
+update table set name='newName' where name='oldName' and age=12;
